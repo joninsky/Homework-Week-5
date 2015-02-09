@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6750" systemVersion="14C109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <table alignment="left" id="eY3-RA-cOY">
+                            <items>
+                                <tableRow identifier="annotationCell" id="XU4-HK-OC4" customClass="WatchTableViewCell">
+                                    <group key="rootItem" width="1" height="100" alignment="left" id="2rG-0n-e8D">
+                                        <items>
+                                            <map height="100" alignment="left" id="FqM-0B-XhL"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="myMapView" destination="FqM-0B-XhL" id="tOk-8I-nqM"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="myTable" destination="eY3-RA-cOY" id="lHv-eL-Au0"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="488" y="184"/>
+        </scene>
+    </scenes>
+</document>
